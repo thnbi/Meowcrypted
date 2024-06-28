@@ -7,15 +7,52 @@
 		<title>Decodificador</title>
 	</head>
 	<body>
-		<header>
+		<header class="cabecalho">
 			<img
+				class="cabecalho__logo"
 				src="img/logo.png"
 				alt="computador da cor rosa com um rosto abstrato de gato em sua parte superior em um estilo minimalista"
 			/>
 		</header>
-		<main>
-			<section class="content"></section>
-			<section class="answer-panel"></section>
+		<main class="app">
+			<section class="content">
+				<form class="request-panel">
+					<textarea
+						class="request-panel__input"
+						placeholder="Digite o texto aqui"
+						id="input"
+						name="input"
+						rows="20"
+						cols="50"
+					></textarea>
+					<div class="buttons-area">
+						<button
+							class="buttons-area__button criptografar"
+							type="submit"
+						>
+							criptografar
+						</button>
+						<button
+							class="buttons-area__button descriptografar"
+							type="submit"
+						>
+							descriptografar
+						</button>
+					</div>
+				</form>
+			</section>
+			<section class="answer-panel">
+				<img
+					class="answer-panel__image"
+					src="img/confused-cat.png"
+					alt="gato cinza com moletom roxo com uma expressão de confuso"
+				/>
+				<h2>Nenhuma mensagem encontrada</h2>
+				<p>
+					Digite um texto que você deseja criptografar ou
+					descriptografar.
+				</p>
+			</section>
 		</main>
 		<footer></footer>
 	</body>
