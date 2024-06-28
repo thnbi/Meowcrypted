@@ -1,6 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 :root {
-	--mocha-base: #1E1E2E;
-	--surface: #45475A;
-	--subtext: #BAC2DE;
-	--text: #CDD6F4;
+	--mocha-base: #1e1e2e;
+	--surface: #45475a;
+	--subtext: #bac2de;
+	--text: #cdd6f4;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--mocha-base);
+	color: var(--text);
+	height: 100vh;
+	font-family: 'Inter', sans-serif;
+}
+
+.cabecalho__logo {
+	margin-left: 2.5rem;
+	margin-top: 0.8rem;
+	width: 7.5rem;
+}
+
+.app {
+	display: flex;
+	justify-content: center;
+	gap: 2%;
+}
+
+.content {
+	width: 60%;
+	margin-left: 6%;
+}
+
+.request-panel {
+	display: flex;
+	flex-direction: column;
+}
+
+.request-panel__input {
+	color: var(--text);
+	background-color: var(--mocho-base);
+	border: none;
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	resize: none;
+}
+
+.request-panel__input::placeholder {
+	color: var(--subtext);
+}
+
+.request-panel__input:focus {
+	outline: none;
+}
+
+.buttons-area {
+	display: flex;
+	justify-content: space-between;
+}
+
+.buttons-area__button {
+	border: none;
+	border-radius: 24px;
+	padding: 2rem 0;
+	font-size: 1.2rem;
+	cursor: pointer;
+	width: 38%;
+}
+
+.answer-panel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--surface);
+	border-radius: 32px;
+	padding: 1rem;
+	margin-top: -5.45%;
+	height: 94.5vh;
+	width: 25rem;
+}
+
+.answer-panel__image {
+	width: 21rem;
 }
