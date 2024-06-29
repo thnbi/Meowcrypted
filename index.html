@@ -4,16 +4,14 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
-		<title>Decodificador</title>
+		<title>MeowCrypt</title>
 	</head>
 	<body>
-		<header class="cabecalho">
-			<img
-				class="cabecalho__logo"
-				src="img/logo.png"
-				alt="computador da cor rosa com um rosto abstrato de gato em sua parte superior em um estilo minimalista"
-			/>
-		</header>
+		<img
+			class="cabecalho__logo"
+			src="img/logo.png"
+			alt="computador da cor rosa com um rosto abstrato de gato em sua parte superior em um estilo minimalista"
+		/>
 		<main class="app">
 			<section class="content">
 				<form class="request-panel">
@@ -22,21 +20,30 @@
 						placeholder="Digite o texto aqui"
 						id="input"
 						name="input"
-						rows="20"
+						rows="15"
 						cols="50"
 					></textarea>
+					<div class="request-panel__warning">
+						<img
+							src="img/Vector.svg"
+							class="request-panel__warning__icon"
+						/>
+						<p class="request-panel__warning__text">
+							Apenas letras minúsculas e sem acento.
+						</p>
+					</div>
 					<div class="buttons-area">
 						<button
 							class="buttons-area__button criptografar"
 							type="submit"
 						>
-							criptografar
+							Criptografar
 						</button>
 						<button
 							class="buttons-area__button descriptografar"
 							type="submit"
 						>
-							descriptografar
+							Descriptografar
 						</button>
 					</div>
 				</form>
@@ -47,13 +54,16 @@
 					src="img/confused-cat.png"
 					alt="gato cinza com moletom roxo com uma expressão de confuso"
 				/>
-				<h2>Nenhuma mensagem encontrada</h2>
-				<p>
-					Digite um texto que você deseja criptografar ou
-					descriptografar.
-				</p>
+				<div class="answer-panel__text-area">
+					<h2 class="answer-panel__title">
+						Nenhuma mensagem encontrada
+					</h2>
+					<p class="answer-panel__subtext">
+						Digite um texto que você deseja criptografar ou
+						descriptografar.
+					</p>
+				</div>
 			</section>
 		</main>
-		<footer></footer>
 	</body>
 </html>

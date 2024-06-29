@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 :root {
 	--mocha-base: #1e1e2e;
@@ -11,16 +11,17 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
 }
 
 body {
 	background-color: var(--mocha-base);
 	color: var(--text);
 	height: 100vh;
-	font-family: 'Inter', sans-serif;
 }
 
 .cabecalho__logo {
+	position: absolute;
 	margin-left: 2.5rem;
 	margin-top: 0.8rem;
 	width: 7.5rem;
@@ -30,24 +31,29 @@ body {
 	display: flex;
 	justify-content: center;
 	gap: 2%;
+	height: 100vh;
 }
 
 .content {
-	width: 60%;
+	align-self: center;
+	width: 56%;
 	margin-left: 6%;
 }
 
 .request-panel {
 	display: flex;
 	flex-direction: column;
+	height: 54rem;
+	gap: 4%;
+	margin-top: 6rem;
 }
 
 .request-panel__input {
 	color: var(--text);
 	background-color: var(--mocho-base);
 	border: none;
-	padding: 0.5rem;
-	font-size: 1.5rem;
+	padding: 2rem;
+	font-size: 2rem;
 	resize: none;
 }
 
@@ -59,18 +65,46 @@ body {
 	outline: none;
 }
 
+.request-panel__warning {
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+	gap: 0.5%;
+}
+
+.request-panel__warning__icon {
+	width: 1rem;
+}
+
+.request-panel__warning__text {
+	color: var(--subtext);
+	font-size: 0.75rem;
+}
+
 .buttons-area {
 	display: flex;
 	justify-content: space-between;
+	padding: 0 2rem;
 }
 
 .buttons-area__button {
 	border: none;
 	border-radius: 24px;
-	padding: 2rem 0;
+	padding: 1.5rem 0;
 	font-size: 1.2rem;
 	cursor: pointer;
-	width: 38%;
+	width: 20.5rem;
+}
+
+.criptografar {
+	background-color: var(--subtext);
+	color: var(--mocha-base);
+}
+
+.descriptografar {
+	background-color: var(--mocho-base);
+	color: var(--subtext);
+	border: 2px solid var(--subtext);
 }
 
 .answer-panel {
@@ -78,14 +112,21 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	align-self: center;
 	background-color: var(--surface);
 	border-radius: 32px;
-	padding: 1rem;
-	margin-top: -5.45%;
-	height: 94.5vh;
+	padding: 3rem;
+	height: 59rem;
 	width: 25rem;
+	text-align: center;
+	gap: 4%;
 }
 
 .answer-panel__image {
 	width: 21rem;
+}
+
+.answer-panel__title {
+	font-size: 1.5rem;
+	margin-bottom: 3%;
 }
