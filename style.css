@@ -110,8 +110,6 @@ body {
 .answer-panel {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	align-self: center;
 	background-color: var(--surface);
 	border-radius: 32px;
@@ -122,6 +120,11 @@ body {
 	gap: 4%;
 }
 
+.answer-panel__align {
+	align-items: center;
+	justify-content: center;
+}
+
 .answer-panel__image {
 	width: 21rem;
 }
@@ -129,4 +132,10 @@ body {
 .answer-panel__title {
 	font-size: 1.5rem;
 	margin-bottom: 3%;
+}
+
+.answer-text {
+	font-size: 1.8rem;
+	word-wrap: break-word;
+	text-align: left;
 }
