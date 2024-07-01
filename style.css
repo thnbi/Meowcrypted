@@ -12,6 +12,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Inter", sans-serif;
+	scrollbar-width: none;
 }
 
 body {
@@ -118,11 +119,13 @@ body {
 	width: 25rem;
 	text-align: center;
 	gap: 4%;
+	cursor: pointer;
 }
 
 .answer-panel__align {
 	align-items: center;
 	justify-content: center;
+	cursor: auto;
 }
 
 .answer-panel__image {
@@ -138,4 +141,9 @@ body {
 	font-size: 1.8rem;
 	word-wrap: break-word;
 	text-align: left;
+}
+
+.cursor-visible::before {
+	content: "📋";
+	position: absolute;
 }
