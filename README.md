@@ -1,8 +1,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# Meowcrypted <img height="40" align="center" src="https://cdn.discordapp.com/attachments/896445365031698492/1257466396603060314/logo.png?ex=66848257&is=668330d7&hm=6b785d456691dc3517ba5664ec5b64b4d03766c3e75ae4d7f0f65840dcd39cc3&">
+# Meowcrypted <img height="40" align="center" src="https://i.imgur.com/oalzKXF.png">
 
-![Meowcrypted Page](https://cdn.discordapp.com/attachments/896445365031698492/1257463166334537749/image.png?ex=66847f55&is=66832dd5&hm=58bfe3c2e7593b29827293ba97b74a128c78dfa2f6e5049b077bebd11742c5ef&)
+![Meowcrypted Page](https://i.imgur.com/xZcYjFo.png)
 
 ## Premissa 🤔
 
