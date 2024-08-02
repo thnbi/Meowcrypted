@@ -28,6 +28,10 @@ body {
 	width: 7.5rem;
 }
 
+.cabecalho__logo:hover {
+	cursor: pointer;
+}
+
 .app {
 	display: flex;
 	justify-content: center;

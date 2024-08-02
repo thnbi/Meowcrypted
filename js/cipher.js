@@ -28,4 +28,29 @@ function decrypt(text) {
 		.join("");
 }
 
-export { encrypt, decrypt };
+function meowEncrypt(text) {
+	const meowSubstitution = {
+		a: "meow",
+		e: "mew",
+		i: "miaow",
+		o: "mrr",
+		u: "miau",
+	};
+	return text.replace(/[aeiou]/g, (match) => meowSubstitution[match]);
+}
+
+function meowDecrypt(text) {
+	const reverseMeowSubstitution = {
+		meow: "a",
+		mew: "e",
+		miaow: "i",
+		mrr: "o",
+		miau: "u",
+	};
+	return text.replace(
+		/meow|mew|miaow|mrr|miau/g,
+		(match) => reverseMeowSubstitution[match]
+	);
+}
+
+export { encrypt, decrypt, meowEncrypt, meowDecrypt };
