@@ -26,4 +26,4 @@ O [algoritmo](https://github.com/thnbi/Meowcrypted/blob/f45329a1fde0f5c08caff344
 Experimente transformar suas mensagens e descubra como é fácil e divertido criptografar e descriptografar com **Meowcrypted**!
 
 ## Tecnologias 🖥️
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,git,github)](https://skillicons.dev)
+[![HTML, CSS, JS, GIT, GitHub](https://skillicons.dev/icons?i=html,css,js,git,github)](https://skillicons.dev)
